@@ -1,0 +1,7 @@
+.claude/
+__pycache__/
+*.pyc
+credentials/
+output/
+processed/
+.env
