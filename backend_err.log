@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\logging\config.py", line 552, in configure
+    formatters[name] = self.configure_formatter(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\logging\config.py", line 664, in configure_formatter
+    result = self.configure_custom(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\logging\config.py", line 482, in configure_custom
+    result = c(**kwargs)
+             ^^^^^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\logging.py", line 42, in __init__
+    self.use_colors = sys.stdout.isatty()
+                      ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'isatty'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Usuario\mark18sistema_procesamiento_de_vulnerabilidades\server.py", line 473, in <module>
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\main.py", line 551, in run
+    config = Config(
+             ^^^^^^^
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\config.py", line 282, in __init__
+    self.configure_logging()
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\config.py", line 377, in configure_logging
+    logging.config.dictConfig(self.log_config)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\logging\config.py", line 823, in dictConfig
+    dictConfigClass(config).configure()
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\logging\config.py", line 555, in configure
+    raise ValueError('Unable to configure '
+ValueError: Unable to configure formatter 'default'

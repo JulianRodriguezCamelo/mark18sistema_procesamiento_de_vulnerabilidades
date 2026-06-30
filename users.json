@@ -1,0 +1,30 @@
+{
+  "admin@empresa.com": {
+    "email": "admin@empresa.com",
+    "name": "Admin",
+    "hashed_password": "$2b$12$SssBxQX1qAEFGWFSgn8c4ujw6MpIQqQYMnHa6QRzDL3cXYWY8Qkwy",
+    "role": "admin",
+    "totp_secret": null,
+    "totp_enabled": false
+  },
+  "admin@fiduprevisora.com.co": {
+    "email": "admin@fiduprevisora.com.co",
+    "name": "Admin FP",
+    "hashed_password": "$2b$12$rrun/rq.4V.H4s5x9vZ7DugEhGSrtK1l/vh9aQcw2Kl/GOcVToAvK",
+    "role": "admin"
+  },
+  "seguridad@fiduprevisora.com.co": {
+    "email": "seguridad@fiduprevisora.com.co",
+    "name": "Seguridad",
+    "hashed_password": "$2b$12$msIr/YPH.luwzP0pZ3/y6eqSY7xoAqC7EBRP12bR6XTzypQCEKzw.",
+    "role": "user"
+  },
+  "p_jcrodriguez@fiduprevisora.com.co": {
+    "email": "p_jcrodriguez@fiduprevisora.com.co",
+    "name": "JC Rodriguez",
+    "hashed_password": "$2b$12$5yZ/P07u5VlS/Kvk1l7jy.GzxXXIPZumnu8U0Lu7XWddwsTGDCB1m",
+    "role": "admin",
+    "totp_secret": "BYZM3C4D65KWGVZ5ZJL6TE63MNJPIUQV",
+    "totp_enabled": true
+  }
+}

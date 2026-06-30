@@ -1,0 +1,9 @@
+⚠ Port 3000 is in use by process 16632, using available port 3001 instead.
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          16632
+- Dir:          C:\Users\Usuario\mark18sistema_procesamiento_de_vulnerabilidades\frontend
+- Log:          .next\dev\logs\next-development.log
+
+Run taskkill /PID 16632 /F to stop it.

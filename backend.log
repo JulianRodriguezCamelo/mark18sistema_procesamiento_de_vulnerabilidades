@@ -1,0 +1,348 @@
+INFO:     Started server process [26884]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:43808 - "OPTIONS /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43808 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43808 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:31657 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58325 - "OPTIONS /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37143 - "OPTIONS /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58325 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37143 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14602 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14602 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:8943 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:8943 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44105 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50209 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50170 - "OPTIONS /api/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50170 - "POST /api/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50170 - "GET /api/tasks/46db3296-c5ea-4125-8bbd-e8bd8b9b37bc/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBlbXByZXNhLmNvbSIsIm5hbWUiOiJBZG1pbiIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTc3ODc2NTg3M30.FBljsQF6z64v4mjVrM8FkUfrcvX3vrOea9bejiH87zg HTTP/1.1" 200 OK
+C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+  [OK] Hoja encontrada: 'CUADRO DE MANDO'
+    [Groq-CRITICAL] 1 pendientes → 1 únicos (0 llamadas ahorradas, key CRITICAL).
+    [OK] Documento: Plan_Remediacion_obrasporimpuestos.fiduprevisora.com.co_Sin-Proyecto_CRITICAL.docx
+    [Groq-HIGH] 4 pendientes → 3 únicos (1 llamadas ahorradas, key HIGH).
+INFO:     127.0.0.1:28229 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:28229 - "GET /api/auth/users HTTP/1.1" 200 OK
+    [OK] Documento: Plan_Remediacion_obrasporimpuestos.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Groq-MEDIUM] 4 pendientes → 4 únicos (0 llamadas ahorradas, key MEDIUM).
+    [Groq-MEDIUM] Chunk 1/2 (3 vulns únicas)...
+    [Groq-MEDIUM] Chunk 2/2 (1 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_obrasporimpuestos.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Groq-CRITICAL] 2 pendientes → 2 únicos (0 llamadas ahorradas, key CRITICAL).
+    [OK] Documento: Plan_Remediacion_hcprd.fiduprevisora.com.co_Sin-Proyecto_CRITICAL.docx
+    [Cache] 1/2 vuln(s) resueltas desde cache.
+    [Groq-HIGH] 1 pendientes → 1 únicos (0 llamadas ahorradas, key HIGH).
+    [OK] Documento: Plan_Remediacion_hcprd.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_hcprd.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Groq-LOW] 1 pendientes → 1 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_hcprd.fiduprevisora.com.co_Sin-Proyecto_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_arca.fiduprevisora.com.co_Sin-Proyecto_CRITICAL.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_arca.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 2/4 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 2 pendientes → 2 únicos (0 llamadas ahorradas, key MEDIUM).
+    [OK] Documento: Plan_Remediacion_arca.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/3 vuln(s) resueltas desde cache.
+    [Groq-LOW] 2 pendientes → 2 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_arca.fiduprevisora.com.co_Sin-Proyecto_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_flexifon.fiduprevisora.com.co_Sin-Proyecto_CRITICAL.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_flexifon.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 3/4 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 1 pendientes → 1 únicos (0 llamadas ahorradas, key MEDIUM).
+    [OK] Documento: Plan_Remediacion_flexifon.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Groq-HIGH] 1 pendientes → 1 únicos (0 llamadas ahorradas, key HIGH).
+    [OK] Documento: Plan_Remediacion_appmovilfomag.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 2/3 vuln(s) resueltas desde cache.
+    [Groq-HIGH] 1 pendientes → 1 únicos (0 llamadas ahorradas, key HIGH).
+    [OK] Documento: Plan_Remediacion_172.16.0.41_Sin-Proyecto_HIGH.docx
+    [Cache] 1/3 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 2 pendientes → 2 únicos (0 llamadas ahorradas, key MEDIUM).
+    [OK] Documento: Plan_Remediacion_172.16.0.41_Sin-Proyecto_MEDIUM.docx
+    [Cache] 3/3 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.109_Sin-Proyecto_HIGH.docx
+    [Cache] 3/3 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.109_Sin-Proyecto_MEDIUM.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.9_Sin-Proyecto_HIGH.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.9_Sin-Proyecto_MEDIUM.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.76_Sin-Proyecto_HIGH.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.76_Sin-Proyecto_MEDIUM.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_elearning.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_elearning.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fic.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 3/3 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fic.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fic.fiduprevisora.com.co_Sin-Proyecto_LOW.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fiduprocesos.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fiduprocesos.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fiduprocesos.fiduprevisora.com.co_Sin-Proyecto_LOW.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fomag.gov.co_Sin-Proyecto_HIGH.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fomag.gov.co_Sin-Proyecto_MEDIUM.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_mft.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 3/3 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_mft.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_orfeo.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 4/5 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 1 pendientes → 1 únicos (0 llamadas ahorradas, key MEDIUM).
+    [OK] Documento: Plan_Remediacion_orfeo.fiduprevisora.com.co_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.45_Sin-Proyecto_HIGH.docx
+    [Cache] 2/3 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 1 pendientes → 1 únicos (0 llamadas ahorradas, key MEDIUM).
+    [OK] Documento: Plan_Remediacion_172.16.0.45_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.187_Sin-Proyecto_HIGH.docx
+    [Cache] 1/2 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 1 pendientes → 1 únicos (0 llamadas ahorradas, key MEDIUM).
+    [OK] Documento: Plan_Remediacion_172.16.0.187_Sin-Proyecto_MEDIUM.docx
+    [Groq-LOW] 1 pendientes → 1 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_172.16.0.187_Sin-Proyecto_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.220_Sin-Proyecto_HIGH.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.220_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.220_Sin-Proyecto_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fiduprevisora.com.co_Sin-Proyecto_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_zenon.fiduprevisora.com.co_Sin-Proyecto_HIGH.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.9-22_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.41-22_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0.45-22_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_172.16.0..45_Sin-Proyecto_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_Elearning.fiduprevisora.com.co_Sin-Proyecto_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_fsprd.fiduprevisora.com.co_Sin-Proyecto_LOW.docx
+INFO:     127.0.0.1:35544 - "OPTIONS /api/tasks/46db3296-c5ea-4125-8bbd-e8bd8b9b37bc/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35544 - "GET /api/tasks/46db3296-c5ea-4125-8bbd-e8bd8b9b37bc/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:15776 - "OPTIONS /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:15776 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:15776 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37179 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48677 - "OPTIONS /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "OPTIONS /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48677 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33148 - "OPTIONS /api/auth/login HTTP/1.1" 200 OK
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+INFO:     127.0.0.1:41262 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41262 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47280 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47280 - "OPTIONS /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41262 - "OPTIONS /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41262 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47280 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47280 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41262 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41262 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47280 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56260 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56260 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:26113 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:26113 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56260 - "GET /api/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39417 - "OPTIONS /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39417 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39417 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39417 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54510 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54510 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:30714 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:19112 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:19112 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39379 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47850 - "OPTIONS /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47850 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47850 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61832 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:26396 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:26396 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57655 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1675 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37223 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     Started server process [33880]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [14240]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:13959 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:31840 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50408 - "OPTIONS /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50408 - "GET /api/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:24549 - "OPTIONS /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:24549 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57366 - "OPTIONS /api/auth/verify-totp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57366 - "POST /api/auth/verify-totp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57366 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57366 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50060 - "OPTIONS /api/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50060 - "POST /api/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50060 - "GET /api/tasks/cc524ec3-4e09-4ae6-822b-34002e937b3d/stream?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwX2pjcm9kcmlndWV6QGZpZHVwcmV2aXNvcmEuY29tLmNvIiwibmFtZSI6IkpDIFJvZHJpZ3VleiIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTc3OTMwNzE0N30.nH4RQP4-YjA9VzxxbxL6sZ9edm1yQWrB7Z3C22ze3CY HTTP/1.1" 200 OK
+  [OK] Hoja encontrada: 'CUADRO DE MANDO PROVEEDOR'
+    [Groq-HIGH] 1 pendientes → 1 únicos (0 llamadas ahorradas, key HIGH).
+    [OK] Documento: Plan_Remediacion_10.10.1.100_RED-SRV-DB-CORE-PRD_HIGH.docx
+    [Groq-MEDIUM] 6 pendientes → 6 únicos (0 llamadas ahorradas, key MEDIUM).
+    [Groq-MEDIUM] Chunk 1/2 (3 vulns únicas)...
+    [Groq-MEDIUM] Chunk 2/2 (3 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_10.10.1.100_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Groq-LOW] 1 pendientes → 1 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_10.10.1.2_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Groq-CRITICAL] 1 pendientes → 1 únicos (0 llamadas ahorradas, key CRITICAL).
+    [OK] Documento: Plan_Remediacion_10.10.1.39_RED-SRV-DB-CORE-PRD_CRITICAL.docx
+    [Groq-HIGH] 2 pendientes → 2 únicos (0 llamadas ahorradas, key HIGH).
+    [OK] Documento: Plan_Remediacion_10.10.1.39_RED-SRV-DB-CORE-PRD_HIGH.docx
+    [Groq-MEDIUM] 4 pendientes → 4 únicos (0 llamadas ahorradas, key MEDIUM).
+    [Groq-MEDIUM] Chunk 1/2 (3 vulns únicas)...
+    [Groq-MEDIUM] Chunk 2/2 (1 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_10.10.1.39_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.39_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.48_RED-SRV-DB-CORE-PRD_CRITICAL.docx
+    [Cache] 1/2 vuln(s) resueltas desde cache.
+    [Groq-HIGH] 1 pendientes → 1 únicos (0 llamadas ahorradas, key HIGH).
+    [OK] Documento: Plan_Remediacion_10.10.1.48_RED-SRV-DB-CORE-PRD_HIGH.docx
+    [Cache] 1/8 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 7 pendientes → 7 únicos (0 llamadas ahorradas, key MEDIUM).
+    [Groq-MEDIUM] Chunk 1/3 (3 vulns únicas)...
+    [Groq-MEDIUM] Chunk 2/3 (3 vulns únicas)...
+    [Groq-MEDIUM] Chunk 3/3 (1 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_10.10.1.48_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Cache] 1/5 vuln(s) resueltas desde cache.
+    [Groq-LOW] 4 pendientes → 4 únicos (0 llamadas ahorradas, key LOW).
+    [Groq-LOW] Chunk 1/2 (3 vulns únicas)...
+    [Groq-LOW] Chunk 2/2 (1 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_10.10.1.48_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Groq-CRITICAL] 1 pendientes → 1 únicos (0 llamadas ahorradas, key CRITICAL).
+    [OK] Documento: Plan_Remediacion_10.10.1.50_RED-SRV-DB-CORE-PRD_CRITICAL.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.50_RED-SRV-DB-CORE-PRD_HIGH.docx
+    [Cache] 4/8 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 4 pendientes → 4 únicos (0 llamadas ahorradas, key MEDIUM).
+    [Groq-MEDIUM] Chunk 1/2 (3 vulns únicas)...
+    [Groq-MEDIUM] Chunk 2/2 (1 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_10.10.1.50_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Cache] 3/5 vuln(s) resueltas desde cache.
+    [Groq-LOW] 2 pendientes → 2 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_10.10.1.50_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.60_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Cache] 3/3 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.60_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Cache] 5/5 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.69_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Cache] 3/4 vuln(s) resueltas desde cache.
+    [Groq-LOW] 1 pendientes → 1 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_10.10.1.69_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.72_RED-SRV-DB-CORE-PRD_CRITICAL.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.72_RED-SRV-DB-CORE-PRD_HIGH.docx
+    [Cache] 9/10 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 1 pendientes → 1 únicos (0 llamadas ahorradas, key MEDIUM).
+    [OK] Documento: Plan_Remediacion_10.10.1.72_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Cache] 5/7 vuln(s) resueltas desde cache.
+    [Groq-LOW] 2 pendientes → 2 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_10.10.1.72_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Cache] 5/5 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.73_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.73_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Cache] 4/4 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.77_RED-SRV-DB-CORE-PRD_MEDIUM.docx
+    [Cache] 3/3 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.1.77_RED-SRV-DB-CORE-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.2.2_RED-SRV-RL-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.2.20_RED-SRV-RL-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.2.21_RED-SRV-RL-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.2.22_RED-SRV-RL-PRD_LOW.docx
+    [Groq-CRITICAL] 6 pendientes → 6 únicos (0 llamadas ahorradas, key CRITICAL).
+    [Groq-CRITICAL] Chunk 1/2 (3 vulns únicas)...
+    [Groq-CRITICAL] Chunk 2/2 (3 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_10.10.2.40_RED-SRV-RL-PRD_CRITICAL.docx
+    [Cache] 1/8 vuln(s) resueltas desde cache.
+    [Groq-HIGH] 7 pendientes → 7 únicos (0 llamadas ahorradas, key HIGH).
+    [Groq-HIGH] Chunk 1/3 (3 vulns únicas)...
+    [Groq-HIGH] Chunk 2/3 (3 vulns únicas)...
+    [Groq-HIGH] Chunk 3/3 (1 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_10.10.2.40_RED-SRV-RL-PRD_HIGH.docx
+    [Cache] 6/12 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 6 pendientes → 6 únicos (0 llamadas ahorradas, key MEDIUM).
+    [Groq-MEDIUM] Chunk 1/2 (3 vulns únicas)...
+    [Groq-MEDIUM] Chunk 2/2 (3 vulns únicas)...
+    [OK] Documento: Plan_Remediacion_10.10.2.40_RED-SRV-RL-PRD_MEDIUM.docx
+    [Cache] 2/3 vuln(s) resueltas desde cache.
+    [Groq-LOW] 1 pendientes → 1 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_10.10.2.40_RED-SRV-RL-PRD_LOW.docx
+    [Groq-CRITICAL] 1 pendientes → 1 únicos (0 llamadas ahorradas, key CRITICAL).
+    [OK] Documento: Plan_Remediacion_10.10.2.43_RED-SRV-RL-PRD_CRITICAL.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.2.43_RED-SRV-RL-PRD_HIGH.docx
+    [Cache] 8/10 vuln(s) resueltas desde cache.
+    [Groq-MEDIUM] 2 pendientes → 2 únicos (0 llamadas ahorradas, key MEDIUM).
+    [OK] Documento: Plan_Remediacion_10.10.2.43_RED-SRV-RL-PRD_MEDIUM.docx
+    [Cache] 2/3 vuln(s) resueltas desde cache.
+    [Groq-LOW] 1 pendientes → 1 únicos (0 llamadas ahorradas, key LOW).
+    [OK] Documento: Plan_Remediacion_10.10.2.43_RED-SRV-RL-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.5.15_RED-SRV-APP-PRD_HIGH.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.5.15_RED-SRV-APP-PRD_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.5.15_RED-SRV-APP-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.5.16_RED-SRV-APP-PRD_HIGH.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.5.16_RED-SRV-APP-PRD_MEDIUM.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.5.16_RED-SRV-APP-PRD_LOW.docx
+    [Cache] 1/1 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.5.17_RED-SRV-APP-PRD_HIGH.docx
+    [Cache] 2/2 vuln(s) resueltas desde cache.
+    [OK] Documento: Plan_Remediacion_10.10.5.17_RED-SRV-APP-PRD_MEDIUM.docx

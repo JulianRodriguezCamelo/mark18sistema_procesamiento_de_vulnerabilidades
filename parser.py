@@ -8,7 +8,6 @@ import pandas as pd
 
 # ── Mapeo columna Excel → campo interno ──────────────────────────────────────
 COLUMN_MAP = {
-    # Identificación
     r"^id$":                            "id",
     r"^periodo$":                       "periodo",
     r"^grupos?$":                       "grupos",
@@ -40,7 +39,7 @@ COLUMN_MAP = {
     r"aplicaci[oó]n|^app$":            "aplicacion",
 
     # Puerto / protocolo
-    r"^puerto$|^port$":                "puerto",
+    r"^puerto$|^port$|puerto.*protocolo|protocolo.*puerto": "puerto",
     r"^protocolo$|^protocol$":         "protocolo",
 
     # CVSS
@@ -99,7 +98,7 @@ def _clean(value) -> str | None:
             return None
     except (TypeError, ValueError):
         pass
-    s = str(value).strip()
+    s = str(value).replace("\n", " ").replace("\r", " ").strip().rstrip(",").strip()
     return s if s and s.lower() not in ("nan", "none", "nat") else None
 
 
@@ -113,7 +112,7 @@ def _bool_clean(value) -> str:
     return _clean(value) or "No"
 
 
-TARGET_SHEET = "CUADRO DE MANDO WEXLER"
+TARGET_SHEET = "CUADRO DE MANDO"  # prefijo común; se acepta cualquier hoja que comience con esto
 
 # Palabras clave que identifican la fila real de encabezados
 HEADER_KEYWORDS = {
@@ -154,12 +153,15 @@ def _read_all_sheets(file_path: str) -> tuple[pd.DataFrame | None, str | None]:
     except Exception as e:
         return None, f"No se pudo leer el archivo: {e}"
 
-    # Buscar la hoja objetivo (insensible a mayúsculas/espacios)
+    # Buscar la hoja objetivo: coincidencia exacta primero, luego por prefijo
     target_df = None
+    matched_name = None
+    prefix = TARGET_SHEET.upper()
     for sheet_name, df_sheet in sheets.items():
-        if sheet_name.strip().upper() == TARGET_SHEET.upper():
+        norm = sheet_name.strip().upper()
+        if norm == prefix or norm.startswith(prefix):
             target_df = df_sheet
-            print(f"  [OK] Hoja encontrada: '{sheet_name}'")
+            matched_name = sheet_name
             break
 
     if target_df is None:
@@ -168,6 +170,7 @@ def _read_all_sheets(file_path: str) -> tuple[pd.DataFrame | None, str | None]:
             f"No se encontró la hoja '{TARGET_SHEET}'.\n"
             f"Hojas disponibles: {hojas}"
         )
+    print(f"  [OK] Hoja encontrada: '{matched_name}'")
 
     df_sheet = target_df.dropna(how="all").reset_index(drop=True)
     if df_sheet.empty:

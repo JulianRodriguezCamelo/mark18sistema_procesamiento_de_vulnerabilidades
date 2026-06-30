@@ -6,12 +6,10 @@ Flujo:
   2. Parsea y agrupa por (IP, Proyecto, Severidad)  ← cada nivel = doc propio
   3. Llama a Groq para enriquecer cada grupo (cache CVE + rate limiting)
   4. Genera .docx dentro de output/{severidad}/{ip_proyecto}/
-  5. Sube el .docx a Google Drive
-  6. Mueve el Excel a processed/
+  5. Mueve el Excel a processed/
 
 Uso:
-  python main.py                    # procesa todo lo que haya en input/
-  python main.py --skip-drive       # genera el docx sin subir a Drive
+  python main.py
 """
 import os
 import sys
@@ -28,7 +26,6 @@ from config import INPUT_DIR, OUTPUT_DIR, DONE_DIR
 from parser import parse_excel, agrupar_por_ip_proyecto
 from groq_analyzer import analizar_grupo
 from docx_generator import generar_docx_por_grupo
-from drive_uploader import subir_a_drive
 
 # ── Severidad ──────────────────────────────────────────────────────────────────
 SEVERIDADES = ["critical", "high", "medium", "low"]
@@ -101,7 +98,10 @@ def _preparar_carpetas():
 
 
 def _nombre_carpeta(ip: str, proyecto: str) -> str:
-    return f"{ip}_{proyecto}".replace(" ", "_").replace("/", "-")
+    raw = f"{ip}_{proyecto}"
+    for ch in (" ", "/", ":", "*", "?", '"', "<", ">", "|", "\n", "\r", "\t"):
+        raw = raw.replace(ch, "-")
+    return raw
 
 
 def _nombre_docx(ip: str, proyecto: str, severidad: str) -> str:
@@ -109,7 +109,7 @@ def _nombre_docx(ip: str, proyecto: str, severidad: str) -> str:
     return f"Plan_Remediacion_{safe}_{severidad.upper()}.docx"
 
 
-def procesar_archivo(excel_path: str, skip_drive: bool = False):
+def procesar_archivo(excel_path: str):
     print(f"\n{'='*60}")
     print(f"  Procesando: {os.path.basename(excel_path)}")
     print(f"{'='*60}")
@@ -146,12 +146,7 @@ def procesar_archivo(excel_path: str, skip_drive: bool = False):
         f"{s.upper()}:{conteo_sev[s]}" for s in SEVERIDADES
     ))
 
-    # ── 3. Analizar → Generar docx → Subir a Drive ────────────────────────────
-    if not skip_drive:
-        print("  [Drive] Autenticando con Google...")
-        from drive_uploader import _get_service
-        _get_service()
-
+    # ── 3. Analizar → Generar docx ────────────────────────────────────────────
     total = len(grupos_expandidos)
     for idx, (ip, proyecto, severidad, vulns) in enumerate(grupos_expandidos, 1):
         carpeta_nombre = _nombre_carpeta(ip, proyecto)
@@ -168,15 +163,7 @@ def procesar_archivo(excel_path: str, skip_drive: bool = False):
 
         # Generar .docx
         generar_docx_por_grupo(ip, proyecto, vulns_enriquecidas, output_path)
-
-        # Subir a Drive
-        if not skip_drive:
-            try:
-                drive_folder = f"{severidad}/{carpeta_nombre}"
-                link = subir_a_drive(output_path, subfolder_name=drive_folder)
-                print(f"    [Drive] {link}")
-            except Exception as e:
-                print(f"    [WARN] No se pudo subir: {e}")
+        print(f"    [OK] Guardado en: {output_path}")
 
     # ── 4. Mover Excel a processed/ ───────────────────────────────────────────
     done_path = os.path.join(DONE_DIR, os.path.basename(excel_path))
@@ -186,15 +173,6 @@ def procesar_archivo(excel_path: str, skip_drive: bool = False):
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Procesa Excel de vulnerabilidades y genera plan de remediación."
-    )
-    parser.add_argument(
-        "--skip-drive", action="store_true",
-        help="Genera el .docx sin subirlo a Google Drive."
-    )
-    args = parser.parse_args()
-
     _preparar_carpetas()
 
     excels = [
@@ -212,7 +190,7 @@ def main():
 
     for excel_path in excels:
         try:
-            procesar_archivo(excel_path, skip_drive=args.skip_drive)
+            procesar_archivo(excel_path)
         except Exception as e:
             print(f"  [ERROR] Fallo al procesar {excel_path}: {e}")
 

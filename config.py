@@ -27,8 +27,6 @@ GROQ_KEYS_BY_SEVERITY = {
 
 GROQ_MODEL = "llama-3.1-8b-instant"
 
-DRIVE_FOLDER_ID = get_env_var("DRIVE_FOLDER_ID")
-
 
 # ── Rutas ────────────────────────────────────
 BASE_DIR    = os.path.dirname(__file__)
